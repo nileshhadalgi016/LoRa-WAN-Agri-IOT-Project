@@ -16,7 +16,7 @@ void loop() {
 
    output_value= analogRead(sensor_pin);
 
-   output_value = map(output_value,550,0,0,100);
+   //output_value = map(output_value,550,0,0,100);
 
    Serial.print("Mositure : ");
 
