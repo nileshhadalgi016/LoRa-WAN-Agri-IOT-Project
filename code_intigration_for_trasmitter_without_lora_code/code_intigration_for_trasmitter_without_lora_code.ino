@@ -35,12 +35,14 @@ void loop() {
    Serial.print("Mositure : ");
 
    Serial.print(output_value);
+   Serial.print("  ");
    
 // ldr 
 
 ldr_value = analogRead(ldr_sensor_pin);
-Serial.print("LDR : ");
-Serial.println(ldr_value);
+Serial.print("LDR : "); 
+Serial.print(ldr_value);
+Serial.print("  ");
 
 
 
@@ -49,7 +51,7 @@ Serial.println(ldr_value);
  DHT.read11(dht_apin);
     Serial.print("Current humidity = ");
     Serial.print(DHT.humidity);
-    Serial.print("%  ");
+    Serial.print("% ");
     Serial.print("temperature = ");
     Serial.print(DHT.temperature); 
     Serial.println("C  ");
